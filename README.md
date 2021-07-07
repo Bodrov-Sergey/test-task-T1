@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Приожение "Маятник"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Приложение визуализирует движения маятника согласно законам физики.
 
 ## Available Scripts
 
