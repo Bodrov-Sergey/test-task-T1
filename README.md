@@ -2,9 +2,9 @@
 
 Приложение визуализирует движения маятника согласно законам физики.
 
-## Available Scripts
+## Настройка проекта
 
-In the project directory, you can run:
+Проект настроен с помощью Create-React-app и задеплоен на GitHub Pages по ссылке:(https://facebook.github.io/create-react-app/docs/running-tests)
 
 ### `npm start`
 
