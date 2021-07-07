@@ -1,0 +1,168 @@
+/***********
+Header
+***********/
+.header{
+    width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 100px / 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+}
+.headerLogo{
+
+}
+.headerTitle{
+    justify-self: center;
+    font-size: 15px;
+    color: #005AAA;
+}
+.headerName{
+    justify-self: flex-end;
+    font-size: 15px;
+    color: #005AAA
+}
+/***********
+Settings
+***********/
+.settingsWrapper{
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+.settingsBlock{
+    margin: 0 auto 20px auto;
+    width: 1140px;
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    padding: 0 20px;
+}
+.description{
+    font-size: 16px;
+}
+.settingsItem{
+    display: grid;
+    grid-template: auto auto 40px / 1fr;
+    grid-gap: 10px;
+    align-items: center;
+
+
+}
+.rangeSlider{
+    cursor: pointer;
+}
+.rangeValue{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #b2b2b2;
+    border-radius: 4px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+
+}
+.actionButton{
+    display: block;
+    margin: 0 auto;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #005AAA;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+/***********
+Pendulum
+***********/
+.pendulumWrapper{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.pendulum{
+    background-color: white;
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: -450px;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 30px;
+
+}
+.rope{
+    background-color: black;
+    height: 50%;
+    position: relative;
+}
+.ball{
+    position: absolute;
+    bottom: -18px;
+    left: -18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #005AAA;
+}
+
+/*******************
+Adaptation
+*******************/
+@media(max-width: 1300px){
+    .header{
+        width: 100%;
+    }
+    .settingsBlock{
+        width: 100%;
+    }
+
+}
+@media(max-width: 1050px){
+    .pendulumWrapper{
+        width: 100%;
+    }
+    .pendulum{
+        margin-top: -40%;
+        width: calc(100vw - 60px);
+        height: calc(100vw - 60px);
+    }
+
+}
+@media(max-width: 800px){
+    .settingsBlock{
+        grid-template: auto auto auto / 1fr;
+    }
+
+}
+@media(max-width: 600px){
+    .headerTitle{
+        display: none;
+    }
+    .header{
+        grid-template: 80px / 1fr 1fr;
+    }
+    .headerLogo{
+        width: 80%;
+    }
+    .pendulum{
+        margin-top: -35%;
+    }
+
+}
+@media(max-width: 350px){
+    .actionButton{
+        font-size: 13px;
+    }
+    .pendulum{
+        margin-top: -33%;
+    }
+}
