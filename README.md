@@ -4,7 +4,7 @@
 
 ## Настройка проекта
 
-Проект настроен с помощью Create-React-app и задеплоен на GitHub Pages по ссылке:(https://facebook.github.io/create-react-app/docs/running-tests)
+Проект настроен с помощью Create-React-app и задеплоен на GitHub Pages по ссылке: https://bodrov-sergey.github.io/test-task-T1/
 
 ### `npm start`
 
