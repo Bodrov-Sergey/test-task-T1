@@ -71,7 +71,7 @@ const Pendulum = (props) => {
                     <div className={s.description}>Длина подвеса маятника</div>
                     <input className={s.rangeSlider} type={"range"} min={1} max={10} step={0.1}
                            onChange={onRopeLengthChange} onInput={onRopeLengthChange} value={ropeLength}/>
-                    <span className={s.rangeValue}>{ropeLength} метра</span>
+                    <span className={s.rangeValue}>{ropeLength} метр(а)</span>
 
                 </div>
                 <div className={s.settingsItem}>
@@ -79,14 +79,14 @@ const Pendulum = (props) => {
                     <input className={s.rangeSlider} type={"range"} min={0} max={ropeLength} step={0.1}
                            onInput={onStartHeightChange} onChange={onStartHeightChange}
                            value={startHeight}/>
-                    <div className={s.rangeValue}><p className={s.rangeValueContent}>{startHeight} метра</p></div>
+                    <div className={s.rangeValue}><p className={s.rangeValueContent}>{startHeight} метр(а)</p></div>
                 </div>
                 <div className={s.settingsItem}>
                     <div className={s.description}>Сила притяжения</div>
                     <input className={s.rangeSlider} type={"range"} min={0.2} max={15} step={0.2}
                            onChange={onGravityChange} onInput={onGravityChange} value={gravity}/>
                     <div className={s.rangeValue}><p
-                        className={s.rangeValueContent}>{gravity} метра/секунду <sup>2</sup></p></div>
+                        className={s.rangeValueContent}>{gravity} метр(а)/секунду <sup>2</sup></p></div>
                 </div>
             </div>
             {disabled ? <Loader height={"40px"}/> :
