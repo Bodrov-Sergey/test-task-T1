@@ -6,13 +6,10 @@
 
 Проект настроен с помощью Create-React-app и задеплоен на GitHub Pages по ссылке: https://bodrov-sergey.github.io/test-task-T1/
 
-### `npm start`
+## Инструкиця по сборке и запуску:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1) Копируем: https://github.com/Bodrov-Sergey/test-task-T1.git
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 ### `npm test`
 
